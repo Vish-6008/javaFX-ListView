@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="327.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListMainController">
+   <children>
+     <ComboBox fx:id="combobox" layoutX="49.0" layoutY="52.0" prefHeight="42.0" prefWidth="171.0" promptText="Select Name">
+    <items>
+        <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Item 1" />
+            <String fx:value="Item 2" />
+            <String fx:value="Item 3" />
+            <String fx:value="Item 4" />
+        </FXCollections>
+    </items>
+</ComboBox>
+     
+
+      <Label fx:id="myLabel" layoutX="35.0" layoutY="28.0" prefHeight="17.0" prefWidth="152.0" text="Label" />
+      <Button layoutX="115.0" layoutY="276.0" mnemonicParsing="false" onAction="#comboChanged" prefHeight="30.0" prefWidth="75.0" text="Button" />
+      <ListView fx:id="listview" layoutX="22.0" layoutY="101.0" prefHeight="162.0" prefWidth="289.0" />
+      
+   </children>
+</AnchorPane>
